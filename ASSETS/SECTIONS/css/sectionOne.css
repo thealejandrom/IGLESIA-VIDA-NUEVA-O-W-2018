@@ -1,0 +1,335 @@
+body {
+	background-color: #dcdcdc;
+	text-align: center;
+	font-family: sans-serif;
+}
+
+img {
+	max-width: 100%;
+}
+
+
+:root {
+	
+	/* TEMPORARY */
+	--sectionContainer: #009688;
+	--gridContainer: #009688;
+	/* TEMPORARY */
+	
+	/* MAIN ROOT COLORS */
+	--headerColor: #2196f3;
+	--mainColor: #2196f3;
+	--searchBarTextColor: #2196f3;
+	--shadow: 0 1px 5px rgba(104, 104, 104, 0.8);
+	--activeShadow: 0 1px 3px rgba(104, 104, 104, 0.5);
+	/* MAIN ROOT COLORS */
+	
+	--white: #ffffff;
+	--black: #000000;
+}
+
+
+
+.box-width-banner {
+	grid-area: showcase;
+	color: var(--mainColor);
+	background-color: var(--white);
+	margin-bottom: 5px;
+	
+	box-shadow: var(--shadow);
+}
+
+.box-main-banner {
+	grid-area: showcaseMain;
+	color: var(--mainColor);
+	width: 100%;
+	height: 500px;
+	
+	background: url(/ASSETS/img/backgrounds/background-img-google.jpg) no-repeat center;
+	background-size: cover;
+	color: #ffffff;
+	
+	margin-right: 5px;
+	
+	box-shadow: var(--shadow);
+	
+	border-radius: 3px;
+}
+
+
+
+.box-misc {
+	grid-area: top-box-head;
+	color: var(--mainColor);
+	background-color: var(--white);
+	box-shadow: var(--shadow);
+
+	
+	margin-bottom: 5px;
+	margin-left: 3px;
+}
+
+
+
+.box-form {
+	grid-area: top-box-a;
+	height: 430px;
+	color: var(--mainColor);
+	background-color: var(--white);	
+	box-shadow: var(--shadow);
+	
+	border-radius: 3px;
+	margin-left: 3px;
+	margin-bottom: 3px;
+}
+
+.box-social-buttons {
+	grid-area: top-box-b;
+	height: 65px;
+	
+	color: var(--mainColor);
+	background-color: var(--white);
+	
+	box-shadow: var(--shadow);
+	
+	border-radius: 3px;
+	margin-left: 3px;
+}
+
+
+
+/*	=============================
+		SECTION CONTAINER
+	=============================*/
+
+.sectionOne {
+	background: transparent;
+	color: var(--white);
+	font-size: 25px;
+	
+	width: 100%;
+}
+
+#textContainer > p {
+	font-size: 15px;
+	float: left;
+	
+	margin-left: 25%;
+}
+
+.sectionHeadText {
+	font-size: 15px;
+	float: left;
+	
+	margin-left: 25%;
+}
+
+.sectionHeadBtn {
+	font-family: sans-serif;
+	color: var(--mainColor);
+	float: right;
+	margin-right: 15%;
+	width: 100px;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid #2196f3;
+	
+	margin-top: 6px;
+	
+	box-shadow: var(--shadow);
+	transition: ease-in-out 0.7s;
+}
+
+.sectionHeadBtn:hover {
+	box-shadow: var(--activeShadow);
+	cursor: pointer;
+	background-color: var(--mainColor);
+	color: var(--white);
+	border: 1px solid var(--white);
+}
+
+
+#textContainer > button {
+	
+	font-family: sans-serif;
+	color: var(--mainColor);
+	float: right;
+	margin-right: 25%;
+	width: 150px;
+	height: 35px;
+	border-radius: 5px;
+	border: 1px solid #2196f3;
+	
+	margin-top: 6px;
+	
+	box-shadow: var(--shadow);
+	transition: ease-in-out 0.7s;
+}
+
+#textContainer > button:hover {
+	box-shadow: var(--activeShadow);
+	cursor: pointer;
+	background-color: var(--mainColor);
+	color: var(--white);
+	border: 1px solid var(--white);
+}
+
+
+
+
+
+.grid-container {
+	display: grid;
+	grid-gap: 1px;
+	padding-top: 0;
+	padding-bottom: 10px;
+	
+	grid-template-areas: 
+		'showcase showcase showcase showcase top-box-head'
+		'showcaseMain showcaseMain showcaseMain showcaseMain top-box-a'
+		'showcaseMain showcaseMain showcaseMain showcaseMain top-box-b';
+}
+
+/*	=============================================
+				SPECIFICATIONS BOXES
+	=============================================*/
+
+.socialBtnSign {
+	color: var(--white);
+	margin-top: 10px;
+	float: left;
+	margin-left: 15px;
+}
+
+
+
+/*	=============================================
+			     FORM INPUT EDITING
+	=============================================*/
+
+.signFormInput {
+	width: 270px;
+	height: 50px;
+	font-size: 18px;
+	font-family: sans-serif;
+	padding-left: 15px;
+}
+
+.signFormInput:placeholder-shown {
+	font-size: 18px;
+	padding-left: 15px 
+}
+
+
+#formFooter {
+	margin-top: 25px;
+	color: #79b2e0;
+}
+
+
+#formFooter p {
+	font-size: 15px;
+}
+
+#formFooter a {
+	text-decoration: none;
+	color: #2196f3;
+}
+
+
+
+/*	=============================================
+			   SIGN IN BUTTONS EXTERNAL
+	=============================================*/
+
+.signBtnEdit {
+	margin-top: 25px;
+}
+
+
+#signInBtn {
+	border: none;
+	width: 150px;
+	height: 45px;
+	box-shadow: var(--shadow);
+	background-color: var(--mainColor);
+	color: var(--white);
+	transition: ease-in-out 0.7s;
+}
+
+#signInBtn:hover {
+	box-shadow: var(--activeShadow);
+	cursor: pointer;
+}
+
+
+#signUpBtn {
+	border: none;
+	width: 150px;
+	height: 45px;
+	box-shadow: var(--shadow);
+	color: var(--mainColor);
+	transition: ease-in-out 0.7s;
+}
+
+#signUpBtn:hover {
+	box-shadow: var(--activeShadow);
+	cursor: pointer;
+}
+
+
+
+
+/*	=============================================
+			   SIGN IN BUTTONS EXTERNAL
+	=============================================*/
+
+#containerSocial {
+	display: inline-block;
+	margin-left: -100px;
+	margin-right: -100px;
+	margin-top: 10px;
+}
+
+.googleBtn {
+	margin-left: 15px;
+	float: right;
+	width: 150px;
+	height: 45px;
+	background-color: #4885ed;
+	color: var(--white);
+	border-radius: 3px;
+	transition: ease-in-out 0.7s;
+}
+
+.googleBtn:hover {
+	box-shadow: var(--shadow);
+}
+
+.googleBtn > h5 {
+	float: right;
+	margin-top: 10px;
+	margin-right: 25px;
+}
+
+
+.facebookBtn {
+	display: block;
+	float: left;
+	width: 150px;
+	height: 45px;
+	background-color: #3b5998;
+	color: var(--white);
+	border-radius: 3px;
+	transition: ease-in-out 0.7s;
+}
+
+.facebookBtn:hover {
+	box-shadow: var(--shadow);
+}
+
+.facebookBtn > h5 {
+	float: right;
+	margin-top: 10px;
+	margin-right: 25px;
+}

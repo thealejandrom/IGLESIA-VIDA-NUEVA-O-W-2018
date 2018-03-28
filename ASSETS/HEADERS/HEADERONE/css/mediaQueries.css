@@ -1,0 +1,70 @@
+@media screen and (max-width: 300px) {
+	#postImg {
+		width: 100%;
+		height: 100%;
+	}
+}
+
+
+@media screen and (max-width: 780px) {
+	
+	#menuContainer {
+		display: none;
+	}
+	
+	#searchContainer {
+		max-width: 350px;
+	}
+}
+
+
+/* NORMAL PHONE */
+
+@media screen and (max-width: 300px) {
+	#appsContainer {
+		display: none;
+	}
+}
+
+
+/* CHROMEBOOK */
+
+@media screen and (max-width: 1366px) {
+	
+}
+
+
+/* SAMSUNG G S7 EDGE */
+
+@media screen and (max-width: 400px) {
+	#searchContainer {
+		display: none;
+	}
+	
+	#proPicContainer {
+		margin-left: -20px;
+	}
+	
+	#notifContainer {
+		margin-left: -20px;
+	}
+	
+}
+
+
+/* IPHONE 5s */
+
+@media screen and (max-width: 320px) {
+	#logoContainer {
+		max-width: 70px;
+		max-height: 55px;
+		
+		margin-top: 7px;
+	}
+	
+	
+	#proPicContainer {
+		margin-left: -25px;
+		
+	}
+}

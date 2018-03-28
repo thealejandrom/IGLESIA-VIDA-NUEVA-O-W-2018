@@ -1,0 +1,138 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>HEADER ONE</title>
+		
+		<link rel="stylesheet" href="css/headerOne.css">
+		<link rel="stylesheet" href="css/mediaQueries.css">
+		<link rel="stylesheet" href="css/searchMediaQueries.css">
+		<link rel="stylesheet" href="/ASSETS/HEADERS/HEADERONE/css/dropdown.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+		
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" integrity="sha384-3AB7yXWz4OeoZcPbieVW64vVXEwADiYyAEhwilzWsLw+9FgqpyjjStpPnpBO8o8S" crossorigin="anonymous">
+		<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+
+
+
+
+		
+		<script type="text/javascript">
+            function active(){
+                var searchBar = document.getElementById("searchBar"); if(searchBar.value == ''){ searchBar.value = 'Search...' searchBar.placeholder = ''
+				}
+            }
+            
+            function inactive(){
+                var searchBar = document.getElementById("searchBar");
+                if(searchBar.value == 'Search...'){
+                   searchBar.value = ''
+                    searchBar.placeholder = 'Search...'
+                   }
+            }
+        </script>
+		
+		
+		
+		<!-- <style>
+			.container {
+    			display: inline-block;
+    			cursor: pointer;
+			}
+
+			.bar1, .bar2, .bar3 {
+				width: 35px;
+				height: 5px;
+				background-color: #333;
+				margin: 6px 0;
+				transition: 0.4s;
+			}
+
+			.change .bar1 {
+				-webkit-transform: rotate(-45deg) translate(-9px, 6px);
+				transform: rotate(-45deg) translate(-9px, 6px);
+			}
+
+			.change .bar2 {opacity: 0;}
+
+			.change .bar3 {
+				-webkit-transform: rotate(45deg) translate(-8px, -8px);
+				transform: rotate(45deg) translate(-8px, -8px);
+			}
+		</style> -->
+		
+	</head>
+	<body>
+		
+		<header class="headerOne">
+			
+			<div id="logoContainer">
+				<img src="/ASSETS/img/logos/logo-vidanueva-trans-white.png" width="100%" height="100%" draggable="false" ONCLICK="closeimages();"/>
+			</div>
+			
+			<div id="proPicContainer">
+				<a href="javascript:void"><i class="material-icons md-36 md-light main-icons">&#xE853;</i></a>
+			</div>
+			
+			<div id="notifContainer">
+				<a href="javascript:void"><i class="material-icons md-36 md-light main-icons">&#xE7F5;</i></a>
+			</div>
+			
+			<div id="appsContainer">
+				<a href="javascript:void"><i class="material-icons md-36 md-light main-icons">&#xE5C3;</i></a>
+			</div>
+			
+			<div id="menuContainer">
+				<ul>
+					<li><a href="javascript:void">ITEM 1</a></li>
+					<li><a href="javascript:void">ITEM 2</a></li>
+					<li><a href="javascript:void">ITEM 3</a></li>
+					<li><a href="javascript:void">ITEM 4</a></li>
+				</ul>
+			</div>
+			
+			<div id="searchContainer">
+				<form id="searchForm" action="search.php" method="post">
+					<input id="searchBar" type="search" placeholder="&#xE853;" maxlength="25" autocomplete="on" onMouseDown="active();" onBlur="inactive();" onclick="hideMenu">
+					<input id="searchSubmit" type="submit" value="Search">
+				</form>
+			</div>
+			
+		</header>
+		
+		<img src="/ASSETS/img/backgrounds/finalSectionOne.png" width="100%">
+		
+		
+		<!-- <div style="border: 1px solid #DCDCDC; margin-top: 5px; box-shadow: 0px 0.5px 1px #DCDCDC;">
+			<h1>This is h1 heading</h1>
+			<p>This is a paragraph</p>
+			<img src="/ASSETS/img/logos/logo-vidanueva-transparent.gif" id="postImg" draggable="false" ONCLICK="closeimages();"/>
+			
+			<button style="width:100%; height: 70px; background-color: #2196f3; color: #ffffff; border: none; cursor: pointer;">This is an action button</button>
+		</div> -->
+		
+		
+		<div id="activebtnContainer">
+			<a href="javascript:void">
+			<i class="material-icons md-60 addBtn">&#xE147;</i>
+			</a>
+		</div>
+
+		<!-- <div class="container" onclick="myFunction(this)">
+  			<div class="bar1"></div>
+  			<div class="bar2"></div>
+  			<div class="bar3"></div>
+		</div>
+		
+		<script>
+			function myFunction(x) {
+    			x.classList.toggle("change");
+			}
+		</script> -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</body>
+</html>
