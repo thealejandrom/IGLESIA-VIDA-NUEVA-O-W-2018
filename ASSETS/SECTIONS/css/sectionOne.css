@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Dosis|Fira+Sans|Libre+Barcode+128+Text|Nunito|Press+Start+2P');
+
+
+
 body {
 	background-color: #dcdcdc;
 	text-align: center;
@@ -26,7 +30,39 @@ img {
 	
 	--white: #ffffff;
 	--black: #000000;
+	
+	/* FONTS */
+	
+	--nunito: 'Nunito', sans-serif;
+	--firasans: 'Fira Sans', sans-serif;
+	--dosis: 'Dosis', sans-serif;
+	--cabin: 'Cabin', sans-serif;
+	--barcode: 'Libre Barcode 128 Text', cursive;
+	--pixel: 'Press Start 2P', cursive;
 }
+
+
+
+
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-54 { font-size: 54px; }
+.material-icons.md-60 { font-size: 60px; }
+.material-icons.md-62 { font-size: 62px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.md-orange { color: orange;}
+
+
+
+
 
 
 
@@ -39,22 +75,9 @@ img {
 	box-shadow: var(--shadow);
 }
 
-.box-main-banner {
-	grid-area: showcaseMain;
-	color: var(--mainColor);
-	width: 100%;
-	height: 500px;
-	
-	background: url(/ASSETS/img/backgrounds/background-img-google.jpg) no-repeat center;
-	background-size: cover;
-	color: #ffffff;
-	
-	margin-right: 5px;
-	
-	box-shadow: var(--shadow);
-	
-	border-radius: 3px;
-}
+
+
+
 
 
 
@@ -94,6 +117,16 @@ img {
 	
 	border-radius: 3px;
 	margin-left: 3px;
+}
+
+.box-width-foot {
+	grid-area: width-foot;
+	height: 65px;
+	
+	color: var(--mainColor);
+	background-color: var(--white);
+	
+	box-shadow: var(--shadow);
 }
 
 
@@ -187,7 +220,8 @@ img {
 	grid-template-areas: 
 		'showcase showcase showcase showcase top-box-head'
 		'showcaseMain showcaseMain showcaseMain showcaseMain top-box-a'
-		'showcaseMain showcaseMain showcaseMain showcaseMain top-box-b';
+		'showcaseMain showcaseMain showcaseMain showcaseMain top-box-b'
+		'width-foot width-foot width-foot width-foot width-foot';
 }
 
 /*	=============================================
@@ -332,4 +366,22 @@ img {
 	float: right;
 	margin-top: 10px;
 	margin-right: 25px;
+}
+
+
+
+
+.box-width-foot {
+	margin-top: 5px;
+}
+
+
+
+.box-width-foot > #footLogoContainer {
+	width: 150px;
+	height: 100%;
+}
+
+#footLogoContainer > img {
+	height: 100%;
 }
