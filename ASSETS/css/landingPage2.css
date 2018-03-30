@@ -27,6 +27,46 @@
 }
 
 
+.material-icons.md-18 { font-size: 18px; }
+.material-icons.md-24 { font-size: 24px; }
+.material-icons.md-36 { font-size: 36px; }
+.material-icons.md-48 { font-size: 48px; }
+.material-icons.md-54 { font-size: 54px; }
+.material-icons.md-60 { font-size: 60px; }
+.material-icons.md-62 { font-size: 62px; }
+
+.material-icons.md-dark { color: rgba(0, 0, 0, 0.54); }
+.material-icons.md-dark.md-inactive { color: rgba(0, 0, 0, 0.26); }
+
+.material-icons.md-light { color: rgba(255, 255, 255, 1); }
+.material-icons.md-light.md-inactive { color: rgba(255, 255, 255, 0.3); }
+
+.material-icons.md-orange { color: orange;}
+
+
+
+
+
+.iconClose {
+	float: right;
+	margin: 7px;
+}
+
+#titleClose {
+	float: right;
+}
+
+.iconBack {
+	float: left;
+	margin: 7px;
+}
+
+#titleBack {
+	float: left;
+}
+
+
+
 
 
 #landingTopContainer {
@@ -60,7 +100,7 @@ body, html {
 
 
 .landingBannerContainer {
-	background-image: url(/ASSETS/img/backgrounds/bigbannerwelcome.png);
+	background-color: var(--mainColor);
 	
 	height: 100%;
 	
@@ -70,9 +110,7 @@ body, html {
 }
 
 
-#landingCenterContainer {
-	padding-bottom: 7px;
-}
+
 
 
 
@@ -82,7 +120,7 @@ body, html {
   	top: 50%;
   	transform: translateY(-70%);
 	
-	height: 500px;
+	height: 300px;
 	margin: 25px;
 	
 	background-color: var(--white);
