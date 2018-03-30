@@ -1,0 +1,101 @@
+:root {
+	
+	/* TEMPORARY */
+	--sectionContainer: #009688;
+	--gridContainer: #009688;
+	/* TEMPORARY */
+	
+	/* MAIN ROOT COLORS */
+	--headerColor: #2196f3;
+	--mainColor: #2196f3;
+	--searchBarTextColor: #2196f3;
+	--shadow: 0 1px 7px rgba(104, 104, 104, 40);
+	--activeShadow: 0 3px 100px rgba(33, 150, 243, 0.49);
+	/* MAIN ROOT COLORS */
+	
+	--white: #ffffff;
+	--black: #000000;
+	
+	/* FONTS */
+	
+	--nunito: 'Nunito', sans-serif;
+	--firasans: 'Fira Sans', sans-serif;
+	--dosis: 'Dosis', sans-serif;
+	--cabin: 'Cabin', sans-serif;
+	--barcode: 'Libre Barcode 128 Text', cursive;
+	--pixel: 'Press Start 2P', cursive;
+}
+
+
+
+
+#landingTopContainer {
+	grid-area: top-container;
+	
+	height: 65px;
+}
+
+#landingTopContainer img {
+	height: 100%;
+}
+
+
+
+
+
+
+body, html {
+	height: 100%;
+	
+	background-color: aliceblue;
+	
+	color: var(--mainColor);
+	text-align: center;
+	
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+.landingBannerContainer {
+	background-image: url(/ASSETS/img/backgrounds/bigbannerwelcome.png);
+	
+	height: 100%;
+	
+	background-position: initial;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+
+#landingCenterContainer {
+	padding-bottom: 7px;
+}
+
+
+
+.landingAllContentContainer {
+	
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-70%);
+	
+	height: 500px;
+	margin: 25px;
+	
+	background-color: var(--white);
+	border-radius: 5px;
+}
+
+
+
+
+.landing-grid {
+	display: grid;
+	grid-gap: 1px;
+	
+	grid-template-areas: 
+		'top-container top-container'
+}
