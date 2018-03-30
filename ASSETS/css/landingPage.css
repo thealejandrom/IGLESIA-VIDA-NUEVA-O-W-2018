@@ -1,0 +1,140 @@
+:root {
+	
+	/* TEMPORARY */
+	--sectionContainer: #009688;
+	--gridContainer: #009688;
+	/* TEMPORARY */
+	
+	/* MAIN ROOT COLORS */
+	--headerColor: #2196f3;
+	--mainColor: #2196f3;
+	--searchBarTextColor: #2196f3;
+	--shadow: 0 1px 7px rgba(104, 104, 104, 40);
+	--activeShadow: 0 3px 100px rgba(33, 150, 243, 0.49);
+	/* MAIN ROOT COLORS */
+	
+	--white: #ffffff;
+	--black: #000000;
+	
+	/* FONTS */
+	
+	--nunito: 'Nunito', sans-serif;
+	--firasans: 'Fira Sans', sans-serif;
+	--dosis: 'Dosis', sans-serif;
+	--cabin: 'Cabin', sans-serif;
+	--barcode: 'Libre Barcode 128 Text', cursive;
+	--pixel: 'Press Start 2P', cursive;
+}
+
+
+
+body, html {
+	max-height: 100vh;
+	
+	background-color: var(--mainColor);
+	
+	color: var(--mainColor);
+	text-align: center;
+}
+
+
+
+#landingMainContainer {
+	width: 100%;
+	height: 235px;
+	
+	position: absolute;
+  	top: 50%;
+  	transform: translateY(-70%);
+}
+
+#landingMainContainer img {
+	width: 300px;
+	height: 100%;
+	margin-bottom: 5px;
+}
+
+
+#landingEntBtn {
+	width: 200px;
+	height: 45px;
+	
+	background-color: var(--mainCOlor);	
+	font-family: var(--cabin);
+	font-size: 20px;
+	
+	border: none;
+	border-radius: 3px;
+	border: 1px solid var(--white);
+	color: var(--white);
+	
+	transition: ease-in-out 0.7s;
+}
+
+
+#landingEntBtn:hover {
+	box-shadow: var(--shadow);
+	cursor: pointer;
+	
+	background-color: var(--white);
+	color: var(--mainColor);
+	border: 1px solid var(--mainColor);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .landingGridContainer {
+	display: grid;
+	grid-gap: 1px;
+	
+	grid-template-areas: 
+		'landingTopLogo'
+		'landingBannerImg';
+}
+
+
+.landingLogoContainer {
+	grid-area: landingTopLogo;
+	height: 65px;
+	
+	background-color: var(--white);
+}
+
+.landingLogoContainer > img {
+	height: 100%;
+}
+
+
+
+.landingBannerContainer {
+	grid-area: landingBannerImg;
+	height: 500px;
+	
+	background-color: var(--white);
+}
+
+.landingBannerContainer > img {
+	height: 100%;
+} */
